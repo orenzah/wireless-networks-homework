@@ -1,0 +1,1823 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{pythonhighlight}
+
+\fancyhf{}
+\rhead{\includegraphics[width=1cm]{header.png}}
+\lhead{\includegraphics[width=1cm]{lheader.png}}
+\cfoot{\thepage}
+\usepackage{color}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5cm
+\topmargin 2cm
+\rightmargin 0.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Wireless Communication Networks
+\begin_inset Newline newline
+\end_inset
+
+371-1-1903
+\begin_inset Newline newline
+\end_inset
+
+Exercise 3
+\end_layout
+
+\begin_layout Author
+ID1 & ID2
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Header
+Efi Dvir & Oren Zaharia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ Given Two-Ray model for Multipath propgation: Stationary Receiver
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The received signal can be written:
+\begin_inset Formula 
+\[
+r(t)=A_{1}\cos\left(2\pi f\left(t-t_{1}\right)+\phi_{1}\right)+A_{2}\cos\left(2\pi f\left(t-t_{2}\right)+\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+ are respectively the amplitude and phase of the signal received over path
+ 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ are respectively the amplitude and phase of the signal received over path
+ 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ is the propgation delay corresponding to path 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ is the propgation delay corresponding to path 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ is the frequency
+\end_layout
+
+\begin_layout Standard
+Our approach to obtain an easier expression such as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{R}=A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}+A_{2}e^{j\left(-2\pi ft_{2}+\phi_{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The magnitude of the resultant phasor 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ is a little easier to find if we factor out the firest term.
+ This gives
+\begin_inset Formula 
+\[
+\mathbf{R}=A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}\left(1+\frac{A_{2}}{A_{1}}e^{j\left[-2\pi f\left(t_{2}-t_{1}\right)+\left(\phi_{2}-\phi_{1}\right)\right]}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In our first plot of the Two-Ray model we have used the expression:
+\begin_inset Formula 
+\[
+A=|\mathbf{R}|=\sqrt{A_{1}^{2}+A_{2}^{2}+2A_{1}A_{2}\cos\left[-2\pi f\left(t_{2}-t_{1}\right)+\left(\phi_{2}-\phi_{1}\right)\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figure_1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+
+ Given Two-Ray model for Multipath propgation: Stationary Receiver
+\end_layout
+
+\begin_layout Standard
+The received signal can be written:
+\begin_inset Formula 
+\[
+r(t)=A_{1}\cos\left(2\pi f\left(t-t_{1}\right)+\phi_{1}\right)+A_{2}\cos\left(2\pi f\left(t-t_{2}\right)+\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A little adaptation for our case, adding another ray with another path propertie
+s then the received signal should be written:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r(t)=A_{1}\cos\left(2\pi f\left(t-t_{1}\right)+\phi_{1}\right)+A_{2}\cos\left(2\pi f\left(t-t_{2}\right)+\phi_{2}\right)+A_{3}\cos\left(2\pi f\left(t-t_{3}\right)+\phi_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+ are respectively the amplitude and phase of the signal received over path
+ 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ are respectively the amplitude and phase of the signal received over path
+ 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{3}$
+\end_inset
+
+ are respectively the amplitude and phase of the signal received over path
+ 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ is the propgation delay corresponding to path 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ is the propgation delay corresponding to path 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{3}$
+\end_inset
+
+ is the propgation delay corresponding to path 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ is the frequency
+\end_layout
+
+\begin_layout Standard
+Our approach to obtain an easier expression such as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{R}=A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}+A_{2}e^{j\left(-2\pi ft_{2}+\phi_{2}\right)}+A_{3}e^{j\left(-2\pi ft_{3}+\phi_{3}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The magnitude of the resultant phasor 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ is a little easier to find if we factor out the firest term.
+ This gives
+\begin_inset Formula 
+\[
+\mathbf{R}=A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}\left(1+\frac{A_{2}}{A_{1}}e^{j\left[-2\pi f\left(t_{2}-t_{1}\right)+\left(\phi_{2}-\phi_{1}\right)\right]}+\frac{A_{3}}{A_{1}}e^{j\left[-2\pi f\left(t_{3}-t_{1}\right)+\left(\phi_{3}-\phi_{1}\right)\right]}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expanding the exponential in the parentheses using Euler's identity and
+ combining real parts and imaginary parts gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathbf{R} & =A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}\left(1+\Re e\mid_{A_{2}}+j\cdot\Im m\mid_{A_{2}}+\Re e\mid_{A_{3}}+j\cdot\Im m\mid_{A_{3}}\right)\\
+ & =A_{1}e^{j\left(-2\pi f_{1}+\phi_{1}\right)}\left(\left(1+\Re e\mid_{A_{2}}+\Re e\mid_{A_{3}}\right)+j\cdot\left(\Im m\mid_{A_{3}}+\Im m\mid_{A_{2}}\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Re e\mid_{A_{2}}=\frac{A_{2}}{A_{1}}\cos\left[-2\pi f\left(t_{2}-t_{1}\right)+\left(\phi_{2}-\phi_{1}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j\cdot\Im m\mid_{A_{2}}=j\frac{A_{2}}{A_{1}}\sin\left[-2\pi f\left(t_{2}-t_{1}\right)+\left(\phi_{2}-\phi_{1}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Re e\mid_{A_{3}}=\frac{A_{3}}{A_{1}}\cos\left[-2\pi f\left(t_{3}-t_{1}\right)+\left(\phi_{3}-\phi_{1}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j\cdot\Im m\mid_{A_{3}}=j\frac{A_{3}}{A_{1}}\sin\left[-2\pi f\left(t_{3}-t_{1}\right)+\left(\phi_{3}-\phi_{1}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we can compute the magnitude as the square root of the square of the
+ real part plus the square of the imaginary part:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=|\mathbf{R}|=A_{1}\sqrt{\left(1+\Re e\mid_{A_{2}}+\Re e\mid_{A_{3}}\right)^{2}+j\cdot\left(\Im m\mid_{A_{3}}+\Im m\mid_{A_{2}}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And our plot for that Three-Ray prepared model
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{A_{1}}{A_{2}}=2\text{dB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{A_{1}}{A_{3}}=2\text{dB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{2}-d_{1}=150\text{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{3}-d_{1}=300\text{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi_{2}-\phi_{1}=\frac{\pi}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi_{3}-\phi_{1}=\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figure_2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+
+ Given a Nth-Ray Model
+\begin_inset Formula 
+\[
+r_{Nray}(t)=\Re\left\{ \frac{\lambda}{4\pi}\left[\frac{\sqrt{G_{l}}u(t)e^{-j2\pi l/\lambda}}{l}+\sum_{i=1}^{N-1}\frac{R_{i}\sqrt{G_{x_{i}}}u\left(t-\tau_{i}\right)e^{-j2\pi x_{i}/\lambda}}{x_{i}}\right]e^{j2\pi f_{c}t}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+10-Ray example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As the amount of rays increases 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+, we expect that the interference will increase respectively.
+ Therefore, statistacally as the amount of rays approach infinity the amount
+ constructive and destructive interferences equlaizes and we will obtain
+ a Rayleigh.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item
+\end_layout
+
+\end_inset
+
+ Description of solution:
+\end_layout
+
+\begin_layout Standard
+Using the inet’s RateControl Show case we configured the environment to
+ be of the size 
+\begin_inset Formula $\SI{1800}{\metre}\times|\SI{1000}{\metre}\times\SI{50}{\metre}$
+\end_inset
+
+ and with the map of the 
+\begin_inset Formula $3^{\text{rd}}$
+\end_inset
+
+ floor of building 37.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted4.png
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the Obstacles.XML file we included 3 obstructing objects as follow:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{   language=XML,   morekeywords={encoding,     xs:schema,xs:element,xs:co
+mplexType,xs:sequence,xs:attribute} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+<environment> 	
+\end_layout
+
+\begin_layout Plain Layout
+
+<object position="center 600 855 25" orientation="0 0 0" shape="cuboid 1000
+ 150 50" material="concrete" fill-color="200 186 50" opacity="0.8"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+	<object position="center 1385 530 25" orientation="0 0 0" shape="cuboid
+ 600 800 50" material="concrete" fill-color="200 186 50" opacity="0.8"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+	<object position="center 675 635 25" orientation="-3 0 0" shape="cuboid
+ 700 140 50" material="concrete" fill-color="200 186 50" opacity="0.8"/>
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+</environment>
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted5.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Source host is stationary in mobility while the sink host is moving
+ 100 meters/sec in a rectangular path around the center obstacle.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+# environment settings
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.config = xmldoc("obstacles.xml")
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMinX = 0m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMinY = 0m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMinZ = 0m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMaxX = 1800m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMaxY = 1000m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.physicalEnvironment.spaceMaxZ = 50m
+\end_layout
+
+\begin_layout Plain Layout
+
+# mobility settings
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.typename = "RectangleMobility"
+\end_layout
+
+\begin_layout Plain Layout
+
+*.sourceHost.mobility.typename = "StationaryMobility"
+\end_layout
+
+\begin_layout Plain Layout
+
+*.sourceHost.mobility.startPos = 3
+\end_layout
+
+\begin_layout Plain Layout
+
+*.sourceHost.mobility.speed = 0mps
+\end_layout
+
+\begin_layout Plain Layout
+
+*.sinkHost.mobility.startPos = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+*.sinkHost.mobility.speed = 100mps
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMinX = 300m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMinY = 500m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMinZ = 0m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMaxX = 1070m 
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMaxY = 750m
+\end_layout
+
+\begin_layout Plain Layout
+
+*.*Host.mobility.constraintAreaMaxZ = 50m
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+During the 
+\begin_inset Formula $\SI{25}{\second}$
+\end_inset
+
+ simulation we record 3 Vectors – Reception power and X, Y coordination
+ using the following 
+\series bold
+@statistic
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+  @statistic[receptionPower](source="receptionMinSignalPower(radioMedium.signalAr
+rivalStarted)";
+\end_layout
+
+\begin_layout Plain Layout
+
+record=vector,stats; interpolationmode=linear);
+\end_layout
+
+\begin_layout Plain Layout
+
+        @statistic[coordX](title="coord X";
+\end_layout
+
+\begin_layout Plain Layout
+
+source="xCoord(mobilityPos(mobilityStateChanged))";
+\end_layout
+
+\begin_layout Plain Layout
+
+record=vector?; interpolationmode=linear);
+\end_layout
+
+\begin_layout Plain Layout
+
+        @statistic[coordY](title="coord Y";
+\end_layout
+
+\begin_layout Plain Layout
+
+source="yCoord(mobilityPos(mobilityStateChanged))";
+\end_layout
+
+\begin_layout Plain Layout
+
+record=vector?; interpolationmode=linear);
+\end_layout
+
+\begin_layout Plain Layout
+
+We run the simulation twice for LogNormalShadowing and RayleighFading Pathloss
+ models:
+\end_layout
+
+\begin_layout Plain Layout
+
+*.radioMedium.pathLoss.typename=${pathlosstype="LogNormalShadowing","RayleighFading
+"}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtaining the following Data:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted6.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Logarithmic power graph of LogNormal fading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted7.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Logarithmic power graph of Rayleigh fading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted8.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Decimal power graph of Rayleigh fading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After exporting the data to excel we have written a python code to connect
+ the time stamp of the X,Y coordination vector recordings to the time stamp
+ of the reception power vector recordings, filtering the sink host data
+ and converting the power to dBm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{python}
+\end_layout
+
+\begin_layout Plain Layout
+
+import math
+\end_layout
+
+\begin_layout Plain Layout
+
+from pylab import *
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+from mpl_toolkits.mplot3d import Axes3D
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+from matplotlib.cbook import get_sample_data
+\end_layout
+
+\begin_layout Plain Layout
+
+from matplotlib._png import read_png
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+from mpl_toolkits.mplot3d import Axes3D
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+fig = plt.figure();
+\end_layout
+
+\begin_layout Plain Layout
+
+ax = fig.add_subplot(111, projection='3d')
+\end_layout
+
+\begin_layout Plain Layout
+
+fn = get_sample_data(r"/home/orenzah/floor.png", asfileobj=False)
+\end_layout
+
+\begin_layout Plain Layout
+
+img = read_png(fn)
+\end_layout
+
+\begin_layout Plain Layout
+
+x, y = ogrid[0:img.shape[0], 0:img.shape[1]]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_arr = [];
+\end_layout
+
+\begin_layout Plain Layout
+
+y_arr = [];
+\end_layout
+
+\begin_layout Plain Layout
+
+z_arr = [];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+powers = open('power.csv', 'r');
+\end_layout
+
+\begin_layout Plain Layout
+
+coors = open('Ypos.csv','r');
+\end_layout
+
+\begin_layout Plain Layout
+
+mini = 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+cnt = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+powers.readline()
+\end_layout
+
+\begin_layout Plain Layout
+
+coors.readline()
+\end_layout
+
+\begin_layout Plain Layout
+
+for line in powers:
+\end_layout
+
+\begin_layout Plain Layout
+
+    arr = line.split(",");
+\end_layout
+
+\begin_layout Plain Layout
+
+    arr = [x.strip() for x in arr]
+\end_layout
+
+\begin_layout Plain Layout
+
+    power = [float(arr[0]), 10*math.log10(float(arr[1]))]
+\end_layout
+
+\begin_layout Plain Layout
+
+    for line_pos in coors:
+\end_layout
+
+\begin_layout Plain Layout
+
+        pos = line_pos.split(",");
+\end_layout
+
+\begin_layout Plain Layout
+
+        pos = [float(x.strip()) for x in pos]
+\end_layout
+
+\begin_layout Plain Layout
+
+        if pos[1] == 750 and pos[2] == 300:
+\end_layout
+
+\begin_layout Plain Layout
+
+            continue;
+\end_layout
+
+\begin_layout Plain Layout
+
+        temp = abs(power[0] - pos[0]);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if power[0] - pos[0] < 3.0e-03:
+\end_layout
+
+\begin_layout Plain Layout
+
+            x_arr.append(pos[1])
+\end_layout
+
+\begin_layout Plain Layout
+
+            y_arr.append(pos[2])
+\end_layout
+
+\begin_layout Plain Layout
+
+            z_arr.append(power[1])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            #print [power[0], power[1], pos[1], pos[2]]
+\end_layout
+
+\begin_layout Plain Layout
+
+            break;
+\end_layout
+
+\begin_layout Plain Layout
+
+print mini
+\end_layout
+
+\begin_layout Plain Layout
+
+print cnt
+\end_layout
+
+\begin_layout Plain Layout
+
+print 2*math.pow(10,-10)
+\end_layout
+
+\begin_layout Plain Layout
+
+ax.plot(x_arr, y_arr, z_arr, label='parametric curve',facecolors=img)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the manipulated data, we draw a 3D plot as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted9.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3D Logarithmic power graph of LogNormal fading vs X,Y
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted10.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted11.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Logarithmic power graph of Rayleigh fading vs X,Y
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted12.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Super composing the results on the map we can observe that the obstacle
+ effect on the reception power
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conclusions: The signal fades as the host furthers from the AP and the obstical
+ add additional attenuation as path loss, as we would expect.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
